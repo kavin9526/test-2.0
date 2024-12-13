@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">总承包</div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">关于总承包</a></li>
+            <li><a href="#works">总承包的作品</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <!-- 照片轮播 -->
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="img/8332109502558180453.jpg" alt="照片1">
+                <p class="caption">欢迎来到总承包的个人网站</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="img/11871051001738210501.jpg" alt="照片2">
+                <p class="caption">分享我的作品和经历</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="img/14359060431011941357.jpg" alt="照片3">
+                <p class="caption">期待与您的交流</p>
+            </div>
+        </div>
+        <div class="carousel-dots"></div>
+    </div>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <h2>关于总承包</h2>
+        <div class="about-content">
+            <img src="path/to/profile.jpg" alt="个人照片" class="profile-img">
+            <p class="bio">在这里写一段关于总承包的介绍...</p>
+        </div>
+    </section>
+
+    <!-- 我的作品 -->
+    <section id="works" class="works">
+        <h2>总承包的作品</h2>
+        <div class="works-grid">
+            <!-- 作品项目示例 -->
+            <div class="work-item">
+                <img src="path/to/work1.jpg" alt="作品1">
+                <div class="work-info">
+                    <h3>作品标题</h3>
+                    <p>作品描述</p>
+                </div>
+            </div>
+            <!-- 更多作品项目 -->
+        </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section id="skills" class="skills">
+        <h2>专业技能</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web开发</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI设计</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>移动开发</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系卡片 -->
+    <section id="contact" class="contact">
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>联系我</h2>
+                <p>如果您有任何问题或合作意向，欢迎随时联系我</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>example@email.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+86 123 4567 8900</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>中国，北京</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyright">&copy; 2024 总承包 | All Rights Reserved</p>
+    </footer>
+
+    <!-- AI助手聊天窗口 -->
+    <div class="chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>AI助手</h3>
+                <button class="close-chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot">
+                    你好！我是总承包的AI助手，有什么我可以帮你的吗？
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="输入消息..." id="messageInput">
+                <button class="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
